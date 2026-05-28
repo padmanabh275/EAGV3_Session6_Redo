@@ -42,3 +42,7 @@
 [2026-05-28 16:37:39.212] [URL_STATUS] [FETCH] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 1.58s
 [2026-05-28 16:37:40.428] [URL_STATUS] [SCRAPE] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 1.21s
 [2026-05-28 16:37:40.559] [URL_STATUS] [COMPLETE] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 2.93s
+[2026-05-28 17:10:02.036] [INFO] [INIT] Crawl4AI 0.8.6
+[2026-05-28 17:10:03.613] [URL_STATUS] [FETCH] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 1.53s
+[2026-05-28 17:10:04.102] [URL_STATUS] [SCRAPE] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 0.49s
+[2026-05-28 17:10:04.172] [URL_STATUS] [COMPLETE] https://en.wikipedia.org/wiki/Claude_Shannon... | Status: SUCCESS | Time: 2.09s

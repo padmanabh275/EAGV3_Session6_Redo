@@ -21,14 +21,8 @@ SYSTEM_PROMPT = (
 PROVIDER_FALLBACK_ORDER = [
     "openai",
     "ollama",
-    "nvidia",
-    "groq",
-    "gemini",
-    "cerebras",
-    "openrouter",
-    "github",
 ]
-RETRY_ROUNDS = 3
+RETRY_ROUNDS = 1
 
 
 def _coerce_tool_args(input_data: DecisionInput, out: DecisionOutput) -> DecisionOutput:
