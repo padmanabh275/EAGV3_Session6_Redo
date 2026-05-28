@@ -339,6 +339,14 @@ Overall pass: False
 (Current blockers are gateway-wide 503/502 bursts in Query A and convergence drift in Query B/C_WRITE.)
 ```
 
+Most recent Query A check after churn reduction:
+
+```text
+iterations: 2
+answer: I retrieved tool output but the LLM gateway is temporarily unavailable (503 across providers). Please retry once the gateway recovers.
+passed: false
+```
+
 ## Notes
 
 - No regex is used to parse LLM outputs; structured JSON output is validated through Pydantic schemas.
@@ -350,5 +358,6 @@ Overall pass: False
 - Decision guardrails added for assignment stability:
   - `C_WRITE` finalizes directly with reminder dates (no unnecessary tool loop).
   - `B` finalizes once activity + weather evidence are present.
+- Provider churn was reduced for run stability: Perception/Decision now try only `openai` then `ollama` with a single retry round.
 - Target pass checks accept equivalent date formats (for example, `15 May 2026` and `May 15, 2026`).
 - If you need to tune convergence, iterate on prompts in `perception.py` and `decision.py`.
